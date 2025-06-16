@@ -75,8 +75,8 @@ This project demonstrates two different ways to style your React components:
 1. Create Button Components
    - Create a new folder called `components` inside the `src` directory
    - Define two React components:
-     - `MyCSSButton`: A button styled with traditional CSS
-     - `MyTailwindButton`: A button styled with Tailwind CSS
+     - `MyCSSButton`
+     - `MyTailwindButton`
    - The text of one button should be 'Tailwind Button' and the other button should say 'CSS button'
 
 2. Use the Buttons
