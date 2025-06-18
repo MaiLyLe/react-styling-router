@@ -310,22 +310,28 @@ LASTLY: <span style="color: red">Create a Pull Request</span>
 
 This task is important to practice Git and GitHub workflow. Follow these steps:
 
-1. Stage your changes:
-   ```bash
-   git add .
-   ```
 
-2. Commit your changes with a descriptive message:
+1. Create a new local branch YOUR_BRANCH (name it better)
+   ```bash
+   git checkout -b YOUR_BRANCH
+   ```
+2.  Stage your changes:
+   ```bash
+   git add /all/changed/file/paths
+   ```
+   Please don't use ```git add .```. Adding all changed files at once to the stage doesn't give you enough control over what you are committing. It's bad practice. 
+
+3. Commit your changes with a descriptive message:
    ```bash
    git commit -m "Add routing and styling features"
    ```
 
-3. Push your changes to GitHub:
+4. Push your changes to GitHub:
    ```bash
-   git push origin main
+   git push origin YOUR_BRANCH
    ```
 
-4. Create a Pull Request:
+5. Create a Pull Request:
    - Go to your GitHub repository
    - Click on "Pull requests"
    - Click "New pull request"
