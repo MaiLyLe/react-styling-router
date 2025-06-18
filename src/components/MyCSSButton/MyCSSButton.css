@@ -1,0 +1,30 @@
+.my-css-button {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+}
+
+@media (min-width: 773px) {
+  .my-css-button {
+    width: auto;
+    padding: 16px 24px;
+    font-size: 1.125rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.my-css-button:hover {
+  background-color: #333;
+}
+
+.my-css-button:disabled {
+  background-color: #ccc;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
