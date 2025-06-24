@@ -310,6 +310,59 @@ LASTLY: <span style="color: red">Create a Pull Request</span>
 
 This task is important to practice Git and GitHub workflow. Follow these steps:
 
+0. FORK THE REPO 
+
+
+Sure! Here's a clean and student-friendly Markdown block you can paste directly into a `README.md`:
+
+---
+
+## 🛠️ How to Push to Your Fork (if You Cloned the Original Repo by Accident)
+
+If you cloned the original repo and already created a branch with your solution — no worries! You can still push your branch to your own fork and make a pull request.
+
+### ✅ Steps
+
+1. **Fork this repo** on GitHub
+   Click the **"Fork"** button in the top-right corner of the repository page.
+
+2. **In your terminal, point your local repo to your fork**
+   Run this in the folder where you already cloned the repo:
+
+   ```bash
+   git remote set-url origin https://github.com/YOUR-USERNAME/YOUR-FORK-NAME.git
+   ```
+
+   Replace `YOUR-USERNAME` and `YOUR-FORK-NAME` with your GitHub username and the name of your forked repo.
+
+3. **Check that it worked**:
+
+   ```bash
+   git remote -v
+   ```
+
+   It should show:
+
+   ```
+   origin  https://github.com/YOUR-USERNAME/YOUR-FORK-NAME.git (fetch)
+   origin  https://github.com/YOUR-USERNAME/YOUR-FORK-NAME.git (push)
+   ```
+
+4. **Push your branch to your fork**:
+
+   ```bash
+   git push origin your-branch-name
+   ```
+
+5. **Open a Pull Request**
+   Go to your fork on GitHub, and GitHub will show a **"Compare & pull request"** button. Click it and submit your PR! 🎉
+
+---
+
+Let me know if you want a version with screenshots or a `.md` file download!
+
+
+
 1. Stage your changes:
    ```bash
    git add .
